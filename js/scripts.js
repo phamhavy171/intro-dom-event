@@ -1,19 +1,19 @@
 console.log('That was it');
 
-function increaseValue(){
+function increaseValue() {
     var grade = document.getElementById('grade').innerText;
     var formattedGrade = parseInt(grade);
 
-    if (formattedGrade < 98) {
-        document.getElementById('grade').innerText = formattedGrade + 1;
+    if (formattedGrade < 100) {
+        document.getElementById('grade').innerText = formattedGrade + 1 + "%";
     }
 }
 
-function decreaseValue(){
+function decreaseValue() {
     var grade = document.getElementById('grade').innerText;
     var formattedGrade = parseInt(grade);
 
-    if (formattedGrade > 50) {
+    if (formattedGrade > 0) {
         document.getElementById('grade').innerText = formattedGrade - 1 + '%';
     }
 }
@@ -22,7 +22,7 @@ function changeColor() {
     document.getElementById('coloredRow').style.backgroundColor = getRandomColor();
 }
 
-function changeBackgroundColor() {
+function changeBackgroundColour() {
     document.body.style.backgroundColor = getRandomColor();
 }
 
